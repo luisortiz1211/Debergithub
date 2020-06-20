@@ -531,6 +531,7 @@ public class winfiguras extends javax.swing.JFrame {
         setName("frmcirculo"); // NOI18N
 
         btnsalir.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnsalir.setForeground(new java.awt.Color(204, 0, 51));
         btnsalir.setText("Salir");
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
