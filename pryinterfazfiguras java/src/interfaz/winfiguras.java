@@ -530,6 +530,7 @@ public class winfiguras extends javax.swing.JFrame {
         setLocation(new java.awt.Point(400, 200));
         setName("frmcirculo"); // NOI18N
 
+        btnsalir.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnsalir.setText("Salir");
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -582,25 +583,22 @@ public class winfiguras extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btncirculo)
-                            .addComponent(btncuadrilatero)
-                            .addComponent(btntriangulo)
-                            .addComponent(btnpoligono)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(207, 207, 207)
-                        .addComponent(btnsalir)))
-                .addGap(0, 137, Short.MAX_VALUE))
+                    .addComponent(btncuadrilatero)
+                    .addComponent(btntriangulo)
+                    .addComponent(btnpoligono)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(btnsalir)
+                        .addComponent(btncirculo)))
+                .addGap(0, 290, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addGap(25, 25, 25)
                 .addComponent(btnsalir)
-                .addGap(1, 1, 1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btncirculo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btntriangulo)
@@ -608,7 +606,7 @@ public class winfiguras extends javax.swing.JFrame {
                 .addComponent(btncuadrilatero)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnpoligono)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();
