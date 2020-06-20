@@ -629,9 +629,8 @@ public class winfiguras extends javax.swing.JFrame {
         radio = Float.parseFloat(txtradio.getText());
         clscirculo areacirculo = new clscirculo(radio);
         txtresradio.setText(""+areacirculo.area());
-        lblcirculo.setText("Area");
-        lblmensaje.setText(""+areacirculo.tipo());
-        
+        lblcirculo.setText("El área es: ");
+        lblmensaje.setText(""+areacirculo.tipo());     
         
     }//GEN-LAST:event_btnareaActionPerformed
 
@@ -644,7 +643,7 @@ public class winfiguras extends javax.swing.JFrame {
         radio = Float.parseFloat(txtradio.getText());
         clscirculo percirculo = new clscirculo(radio);
         txtresradio.setText(""+percirculo.area());
-        lblcirculo.setText("Perimetro");
+        lblcirculo.setText("El perímetro es: ");
         lblmensaje.setText(""+percirculo.tipo());
     }//GEN-LAST:event_btnperimetroActionPerformed
 
@@ -662,7 +661,7 @@ public class winfiguras extends javax.swing.JFrame {
        lados = Integer.parseInt(txtlados.getText());
        clspoligonoreg areapoligono = new clspoligonoreg(longitud,apotema,lados);
        txtpoligono.setText(""+areapoligono.area());
-       lblpoligono.setText("Area");
+       lblpoligono.setText("El área es: ");
        lblmensajepoligono.setText(""+areapoligono.tipo());
        
     }//GEN-LAST:event_btnareapoligonoActionPerformed
@@ -682,7 +681,7 @@ public class winfiguras extends javax.swing.JFrame {
        lados = Integer.parseInt(txtlados.getText());
        clspoligonoreg perpoligono = new clspoligonoreg(longitud,apotema,lados);
        txtpoligono.setText(""+perpoligono.perimetro());
-       lblpoligono.setText("Area");
+       lblpoligono.setText("El área es: ");
        lblmensajepoligono.setText(""+perpoligono.tipo());
     }//GEN-LAST:event_btnperimetropoligonoActionPerformed
 
@@ -692,7 +691,7 @@ public class winfiguras extends javax.swing.JFrame {
         lado3 = Float.parseFloat(txtlado3.getText());
         clstriangulo areatriangulo = new clstriangulo(lado1,lado2,lado3);
         txttriangulo.setText(""+areatriangulo.area());
-        lbltriangulo.setText("Area");
+        lbltriangulo.setText("El área es: ");
         lblmensajetriangulo.setText(""+areatriangulo.tipo());
                 
     }//GEN-LAST:event_btnareatrianguloActionPerformed
@@ -703,7 +702,7 @@ public class winfiguras extends javax.swing.JFrame {
         lado3 = Float.parseFloat(txtlado3.getText());
         clstriangulo pertriangulo = new clstriangulo(lado1,lado2,lado3);
         txttriangulo.setText(""+pertriangulo.perimetro());
-        lbltriangulo.setText("Perimetro");
+        lbltriangulo.setText("El perímetro es: ");
         lblmensajetriangulo.setText(""+pertriangulo.tipo());
                 
     }//GEN-LAST:event_btnperimetrotrianguloActionPerformed
@@ -722,7 +721,7 @@ public class winfiguras extends javax.swing.JFrame {
         ancho = Float.parseFloat(txtancho.getText());
         clscuadrilatero areacuadrilatero = new clscuadrilatero(largo,ancho);
         txtcuadrilatero.setText(""+areacuadrilatero.area());
-        lblcuadrilatero.setText("Area");
+        lblcuadrilatero.setText("El área es: ");
         lblmensajecuadrilatero.setText(""+areacuadrilatero.tipo());
                
     }//GEN-LAST:event_btnareacuadrilateroActionPerformed
@@ -732,7 +731,7 @@ public class winfiguras extends javax.swing.JFrame {
         ancho = Float.parseFloat(txtancho.getText());
         clscuadrilatero percuadrilatero = new clscuadrilatero(largo,ancho);
         txtcuadrilatero.setText(""+percuadrilatero.perimetro());
-        lblcuadrilatero.setText("Area");
+        lblcuadrilatero.setText("El área es: ");
         lblmensajecuadrilatero.setText(""+percuadrilatero.tipo());
     }//GEN-LAST:event_btnperimetrocuadrilateroActionPerformed
 
