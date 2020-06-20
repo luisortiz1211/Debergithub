@@ -540,7 +540,7 @@ public class winfiguras extends javax.swing.JFrame {
 
         grupofiguras.add(btncirculo);
         btncirculo.setFont(new java.awt.Font("Impact", 0, 12)); // NOI18N
-        btncirculo.setForeground(new java.awt.Color(0, 153, 153));
+        btncirculo.setForeground(new java.awt.Color(204, 0, 204));
         btncirculo.setText("Circulo");
         btncirculo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -550,7 +550,7 @@ public class winfiguras extends javax.swing.JFrame {
 
         grupofiguras.add(btntriangulo);
         btntriangulo.setFont(new java.awt.Font("Impact", 0, 12)); // NOI18N
-        btntriangulo.setForeground(new java.awt.Color(0, 153, 153));
+        btntriangulo.setForeground(new java.awt.Color(204, 0, 204));
         btntriangulo.setText("Triangulo");
         btntriangulo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -560,7 +560,7 @@ public class winfiguras extends javax.swing.JFrame {
 
         grupofiguras.add(btncuadrilatero);
         btncuadrilatero.setFont(new java.awt.Font("Impact", 0, 12)); // NOI18N
-        btncuadrilatero.setForeground(new java.awt.Color(0, 153, 153));
+        btncuadrilatero.setForeground(new java.awt.Color(204, 0, 204));
         btncuadrilatero.setText("Cuadrilatero");
         btncuadrilatero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -570,7 +570,7 @@ public class winfiguras extends javax.swing.JFrame {
 
         grupofiguras.add(btnpoligono);
         btnpoligono.setFont(new java.awt.Font("Impact", 0, 12)); // NOI18N
-        btnpoligono.setForeground(new java.awt.Color(0, 153, 153));
+        btnpoligono.setForeground(new java.awt.Color(204, 0, 204));
         btnpoligono.setText("Poligono");
         btnpoligono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
