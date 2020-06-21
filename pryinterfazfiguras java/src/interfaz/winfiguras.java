@@ -583,23 +583,27 @@ public class winfiguras extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnsalir)
+                .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btncuadrilatero)
                     .addComponent(btntriangulo)
                     .addComponent(btnpoligono)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(btnsalir)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
                         .addComponent(btncirculo)))
-                .addGap(0, 290, Short.MAX_VALUE))
+                .addContainerGap(509, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addGap(10, 10, 10)
                 .addComponent(btnsalir)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(btncirculo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btntriangulo)
@@ -607,7 +611,7 @@ public class winfiguras extends javax.swing.JFrame {
                 .addComponent(btncuadrilatero)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnpoligono)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
 
         pack();
@@ -681,7 +685,7 @@ public class winfiguras extends javax.swing.JFrame {
        lados = Integer.parseInt(txtlados.getText());
        clspoligonoreg perpoligono = new clspoligonoreg(longitud,apotema,lados);
        txtpoligono.setText(""+perpoligono.perimetro());
-       lblpoligono.setText("El área es: ");
+       lblpoligono.setText("Area: ");
        lblmensajepoligono.setText(""+perpoligono.tipo());
     }//GEN-LAST:event_btnperimetropoligonoActionPerformed
 
@@ -691,7 +695,7 @@ public class winfiguras extends javax.swing.JFrame {
         lado3 = Float.parseFloat(txtlado3.getText());
         clstriangulo areatriangulo = new clstriangulo(lado1,lado2,lado3);
         txttriangulo.setText(""+areatriangulo.area());
-        lbltriangulo.setText("El área es: ");
+        lbltriangulo.setText("Area: ");
         lblmensajetriangulo.setText(""+areatriangulo.tipo());
                 
     }//GEN-LAST:event_btnareatrianguloActionPerformed
@@ -702,7 +706,7 @@ public class winfiguras extends javax.swing.JFrame {
         lado3 = Float.parseFloat(txtlado3.getText());
         clstriangulo pertriangulo = new clstriangulo(lado1,lado2,lado3);
         txttriangulo.setText(""+pertriangulo.perimetro());
-        lbltriangulo.setText("El perímetro es: ");
+        lbltriangulo.setText("Area: ");
         lblmensajetriangulo.setText(""+pertriangulo.tipo());
                 
     }//GEN-LAST:event_btnperimetrotrianguloActionPerformed
@@ -721,7 +725,7 @@ public class winfiguras extends javax.swing.JFrame {
         ancho = Float.parseFloat(txtancho.getText());
         clscuadrilatero areacuadrilatero = new clscuadrilatero(largo,ancho);
         txtcuadrilatero.setText(""+areacuadrilatero.area());
-        lblcuadrilatero.setText("El área es: ");
+        lblcuadrilatero.setText("Area: ");
         lblmensajecuadrilatero.setText(""+areacuadrilatero.tipo());
                
     }//GEN-LAST:event_btnareacuadrilateroActionPerformed
@@ -731,7 +735,7 @@ public class winfiguras extends javax.swing.JFrame {
         ancho = Float.parseFloat(txtancho.getText());
         clscuadrilatero percuadrilatero = new clscuadrilatero(largo,ancho);
         txtcuadrilatero.setText(""+percuadrilatero.perimetro());
-        lblcuadrilatero.setText("El área es: ");
+        lblcuadrilatero.setText("Area: ");
         lblmensajecuadrilatero.setText(""+percuadrilatero.tipo());
     }//GEN-LAST:event_btnperimetrocuadrilateroActionPerformed
 
