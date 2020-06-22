@@ -28,13 +28,10 @@ public class winfiguras extends javax.swing.JFrame {
     clscuadrilatero areacuadrilatero ,percuadrilatero;
     public winfiguras() {
         initComponents();
-        
         grupofiguras.add(btncirculo);
         grupofiguras.add(btntriangulo);
         grupofiguras.add(btncuadrilatero);
         grupofiguras.add(btnpoligono);
-        
-        
     }
 
  
@@ -640,7 +637,6 @@ public class winfiguras extends javax.swing.JFrame {
 
     private void btncirculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncirculoActionPerformed
         frmcirculo.show();
-        
     }//GEN-LAST:event_btncirculoActionPerformed
 
     private void btnperimetroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnperimetroActionPerformed
@@ -667,7 +663,6 @@ public class winfiguras extends javax.swing.JFrame {
        txtpoligono.setText(""+areapoligono.area());
        lblpoligono.setText("El área es: ");
        lblmensajepoligono.setText(""+areapoligono.tipo());
-       
     }//GEN-LAST:event_btnareapoligonoActionPerformed
 
     private void btnlimpiarpoligonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlimpiarpoligonoActionPerformed
@@ -685,7 +680,7 @@ public class winfiguras extends javax.swing.JFrame {
        lados = Integer.parseInt(txtlados.getText());
        clspoligonoreg perpoligono = new clspoligonoreg(longitud,apotema,lados);
        txtpoligono.setText(""+perpoligono.perimetro());
-       lblpoligono.setText("Area: ");
+       lblpoligono.setText("El perímetro es: ");
        lblmensajepoligono.setText(""+perpoligono.tipo());
     }//GEN-LAST:event_btnperimetropoligonoActionPerformed
 
@@ -735,7 +730,7 @@ public class winfiguras extends javax.swing.JFrame {
         ancho = Float.parseFloat(txtancho.getText());
         clscuadrilatero percuadrilatero = new clscuadrilatero(largo,ancho);
         txtcuadrilatero.setText(""+percuadrilatero.perimetro());
-        lblcuadrilatero.setText("Area: ");
+        lblcuadrilatero.setText("El perímetro es: ");
         lblmensajecuadrilatero.setText(""+percuadrilatero.tipo());
     }//GEN-LAST:event_btnperimetrocuadrilateroActionPerformed
 
