@@ -5,6 +5,7 @@
  */
 package interfaz;
 
+import javax.swing.JOptionPane;
 import negocio.clscirculo;
 import negocio.clscuadrilatero;
 import negocio.clspoligonoreg;
@@ -615,7 +616,14 @@ public class winfiguras extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
-       System.exit(0);
+         int input = JOptionPane.showConfirmDialog(null,
+                "Desea salir del programa?", "Advertencia",
+                JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE);
+         if(input == 0){
+             System.exit(0);
+         }
+         
+       
     }//GEN-LAST:event_btnsalirActionPerformed
 
     private void btnlimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlimpiarActionPerformed
